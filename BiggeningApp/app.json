@@ -20,6 +20,13 @@
       "to": 88999
     }
   ],
+  "internalsVisibleTo": [
+    {
+      "id": "4b827275-f268-498a-986f-61e9cea43b51",
+      "name": "Biggening Corporation Test",
+      "publisher": "Jeremy Vyska"
+    }
+  ],
   "showMyCode": true,
   "target": "Cloud",
   "contextSensitiveHelpUrl": "https://github.com/JeremyVyska/Biggening/issues",

@@ -1,0 +1,94 @@
+{
+	"folders": [
+		{
+			"path": "BiggeningApp",
+			"name": "APP: Biggening",
+		},
+		{
+			"path": "Biggening-Test",
+			"name": "TEST: Biggening"
+		}
+	],
+	"settings": {
+		"CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+		"CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+		"CRS.FileNamePatternPageCustomizations": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+		"CRS.OnSaveAlFileAction": "Rename",
+		"CRS.RemovePrefixFromFilename": true,
+		"al.assemblyProbingPaths": ["./.netpackages"],
+		"al.codeAnalyzers": [
+			"${CodeCop}",
+			"${UICop}"
+		],
+		"al.backgroundCodeAnalysis": true,
+		"al.enableCodeAnalysis": true,
+		"al.packageCachePath": ["./.alpackages", "./packages"],
+		"git.autofetch": true,
+		"alOutline.codeActionsOnSave": [
+			"SortProperties",
+			"SortVariables",
+			"FormatDocument"
+		],
+		"alOutline.codeCleanupActions": [
+			"AddMissingParentheses",
+			"SortProperties",
+			"SortPermissions",
+			"SortPermissionSetList",
+			"SortVariables",
+			"FixKeywordsCase",
+			"RemoveBeginEnd",
+			"RemoveRedundantAppAreas",
+			"RemoveRedundantDataClassification",
+			"MakeFlowFieldsReadOnly"
+		],
+		"alOutline.enableCodeCopFixes": true,
+		"alOutline.fixCodeCopMissingParenthesesOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.fixAll": "explicit"
+		},
+		"editor.inlineSuggest.enabled": true,
+		"editor.inlayHints.enabled": "offUnlessPressed",
+		"al.inlayhints.parameterNames.enabled": true,
+		"al.inlayhints.functionReturnTypes.enabled": true,
+		"al.enableCodeActions": true,
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Local BC Docker",
+				"request": "launch",
+				"type": "al",
+				"environmentType": "Sandbox",
+				"server": "http://stream",
+				"serverInstance": "BC",
+				"authentication": "UserPassword",
+				"startupObjectId": 22,
+				"startupObjectType": "Page",
+				"breakOnError": "All",
+				"launchBrowser": false,
+				"enableLongRunningSqlStatements": true,
+				"enableSqlInformationDebugger": true,
+				"tenant": "default",
+				"usePublicURLFromServer": true
+			},
+			{
+				"name": "Attach: Local server",
+				"type": "al",
+				"request": "attach",
+				"environmentType": "Sandbox",
+				"server": "http://stream",
+				"serverInstance": "BC",
+				"authentication": "UserPassword",
+				"breakOnError": "All",
+				"breakOnRecordWrite": "None",
+				"enableSqlInformationDebugger": true,
+				"enableLongRunningSqlStatements": true,
+				"longRunningSqlStatementsThreshold": 500,
+				"numberOfSqlStatements": 10,
+				"breakOnNext": "WebServiceClient",
+				"tenant": "default"
+			}
+		]
+	}
+}

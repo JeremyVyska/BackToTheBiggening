@@ -1,0 +1,8 @@
+{
+    "CRS.ObjectNamePrefix": "TBC",
+    "al.codeAnalyzers": [
+        "${CodeCop}",
+        "${UICop}",
+        "${PerTenantExtensionCop}"
+    ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "4b827275-f268-498a-986f-61e9cea43b51",
+  "name": "Biggening Corporation Test",
+  "publisher": "Jeremy Vyska",
+  "brief": "Code to Test the Biggening Corporation game",
+  "description": "A silly incremental style community game using Microsoft Dynamics 365 Business Central as the engine to demonstrate AL Development techniques.",
+  "version": "25.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "https://github.com/JeremyVyska/Biggening/issues",
+  "url": "https://github.com/JeremyVyska/Biggening",
+  "logo": ".\\images\\logo.png",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "25.0.0.0",
+  "application": "25.0.0.0",
+  "idRanges": [
+    {
+      "from": 98000,
+      "to": 98999
+    }
+  ],
+  "showMyCode": true,
+  "target": "Cloud",
+  "contextSensitiveHelpUrl": "https://github.com/JeremyVyska/Biggening/issues",
+  "supportedLocales": [
+    "en-GB"
+  ],
+  "runtime": "15.2",
+  "features": [
+    "TranslationFile"
+  ]
+}
